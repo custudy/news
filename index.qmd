@@ -4,15 +4,15 @@ toc: false
 listing: 
     type: table
     contents: NEWS
+    sort: "date desc"
     fields: 
       - date
       - title
-      - description
 ---
 
 ![](work_in_progress.GIF){height="1in" fig-align="left"}
 
-## 일자별 주요 뉴스 및 건설 도시 연구 발행 뉴스 레터
+## 주요 뉴스 및 뉴스 레터
 
 \
 
