@@ -10,9 +10,7 @@ listing:
       - title
 ---
 
-![](work_in_progress.GIF){height="1in" fig-align="left"}
-
 ## 주요 뉴스 및 뉴스 레터
 
-\
+![](work_in_progress.GIF){height="1in" fig-align="left"}
 
