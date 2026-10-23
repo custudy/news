@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-10-15">
 
-<title>뉴스 레터 – CUStudy</title>
+<title>뉴스 레터 Vol.3: Issue 42 – CUStudy</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">뉴스 레터</h1>
+      <h1 class="title">뉴스 레터 Vol.3: Issue 42</h1>
                       </div>
   </div>
     
@@ -226,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/news\.custudy\.org");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
