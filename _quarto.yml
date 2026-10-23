@@ -1,0 +1,40 @@
+project:
+  title: "CUStudy"
+  type: website
+  resources: 
+    - CNAME
+    - "*.(png|jpg|jpeg|svg)"
+
+execute: 
+  freeze: auto
+
+website:
+  draft-mode: visible
+  navbar:
+    logo: cus_logo_v.png
+    logo-href: https://www.custudy.org
+    search: false
+    right:
+      - href: https://news.custudy.org
+        text: "News Letters"
+      - href: https://pubs.custudy.org 
+        text: "Publications"
+      - href: https://data.custudy.org
+        text: "Data Repository"
+  page-footer:
+    left: |
+      © 2026 Construction Urban Study
+    center: |
+      [![](cus_logo_h.png){height=25px}](/)
+    right: |
+      [contact@custudy.org](mailto:contact@custudy.org)
+
+    background: light
+    foreground: dark
+
+format:
+  html:
+    theme: spacelab
+    date-format: iso
+    title-block-banner: true
+    toc: true
