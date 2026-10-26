@@ -2,15 +2,35 @@
 title: "News Letters"
 toc: false
 listing: 
+
+  - id: news
     type: table
-    contents: NEWS
+    contents: NEWS/**/*_news.qmd
     sort: "date desc"
     fields: 
       - date
       - title
+
+  - id: letter
+    type: table
+    contents: NEWS/**/*_letter.qmd
+    sort: "date desc"
+    fields: 
+      - date
+      - title
+
 ---
 
 ## 주요 뉴스 및 뉴스 레터
 
 ![](work_in_progress.GIF){height="1in" fig-align="left"}
 
+## 주요 뉴스
+
+:::{#news}
+:::
+
+## 뉴스 레터
+
+:::{#letter}
+:::
