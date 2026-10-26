@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://news.custudy.org/NEWS/2025년/2025_12_05_letter.html</loc>
-    <lastmod>2026-10-26T07:10:03.775Z</lastmod>
+    <loc>https://news.custudy.org/weeklynews.html</loc>
+    <lastmod>2026-10-26T12:10:34.926Z</lastmod>
   </url>
   <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026_10_26_news.html</loc>
+    <loc>https://news.custudy.org/NEWS/2026년/2026년10월26일_wk47.html</loc>
     <lastmod>2026-10-26T07:09:20.719Z</lastmod>
   </url>
   <url>
-    <loc>https://news.custudy.org/index.html</loc>
-    <lastmod>2026-10-26T09:38:44.658Z</lastmod>
+    <loc>https://news.custudy.org/NEWS/2026년/2026년10월26일_news.html</loc>
+    <lastmod>2026-10-26T12:05:34.881Z</lastmod>
   </url>
   <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026_10_23_news.html</loc>
+    <loc>https://news.custudy.org/index.html</loc>
+    <lastmod>2026-10-26T12:18:05.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/NEWS/2026년/2026년10월23일_news.html</loc>
     <lastmod>2026-10-23T15:51:12.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/NEWS/2025년/2025년12월05일_letter.html</loc>
+    <lastmod>2026-10-26T12:17:22.357Z</lastmod>
   </url>
 </urlset>
