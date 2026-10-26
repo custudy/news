@@ -1,5 +1,5 @@
 ---
-title: "뉴스 레터 Vol.3: Issue 49"
+title: "건설 도시 연구 - 뉴스 레터 Vol.3: Issue 49"
 date: 2025-12-05
 toc: true
 toc-depth: 4

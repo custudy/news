@@ -5,7 +5,9 @@ listing:
 
   - id: news
     type: table
-    contents: NEWS/**/*_news.qmd
+    contents:
+      - NEWS/**/*_news.qmd
+      - NEWS/**/*_wk*.qmd
     sort: "date desc"
     fields: 
       - date
