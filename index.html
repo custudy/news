@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-news .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -88,7 +88,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-news'] = new List('listing-news', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-letter .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-letter'] = new List('listing-letter', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -207,16 +235,14 @@ window.Quarto = {
 <p><img src="work_in_progress.GIF" class="quarto-figure quarto-figure-left figure-img" style="height:1in"></p>
 </figure>
 </div>
-
-
-
 </section>
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<section id="주요-뉴스" class="level2">
+<h2 class="anchored" data-anchor-id="주요-뉴스">주요 뉴스</h2>
+<div id="listing-news" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-news-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-news'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">정렬</option>
       <option value="index" data-direction="asc">기본</option>
       <option value="listing-date-sort" data-direction="asc">
@@ -251,7 +277,17 @@ window.Quarto = {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1792681200000" data-listing-file-modified-sort="1792770672472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674" data-listing-title-sort="오세훈 시장 운명의 날" data-listing-filename-sort="2026_10_23_news.qmd">
+<tr data-index="0" data-listing-date-sort="1792940400000" data-listing-file-modified-sort="1792991096665" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1185" data-listing-title-sort="김정은 북한 국무위원장 전격 당일치기 방중" data-listing-filename-sort="2026_10_26_news.qmd">
+<td>
+<span class="listing-date">2026-10-26</span>
+</td>
+<td>
+<a href="./NEWS/2026_10_26_news.html" class="title listing-title">김정은 북한 국무위원장 전격 당일치기 방중</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1792681200000" data-listing-file-modified-sort="1792770672472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674" data-listing-title-sort="오세훈 시장 운명의 날" data-listing-filename-sort="2026_10_23_news.qmd">
 <td>
 <span class="listing-date">2026-10-23</span>
 </td>
@@ -261,7 +297,53 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1764860400000" data-listing-file-modified-sort="1792770292554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1378" data-listing-title-sort="뉴스 레터 Vol.3: Issue 49" data-listing-filename-sort="2025_12_05_letter.qmd">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">일치 없음</div>
+</div>
+</section>
+<section id="뉴스-레터" class="level2">
+<h2 class="anchored" data-anchor-id="뉴스-레터">뉴스 레터</h2>
+<div id="listing-letter" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-letter-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-letter'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">정렬</option>
+      <option value="index" data-direction="asc">기본</option>
+      <option value="listing-date-sort" data-direction="asc">
+        날짜 - 오름차순
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        날짜 - 내림차순
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        제목
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="필터">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">날짜</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-date-sort="1764860400000" data-listing-file-modified-sort="1792770292554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1378" data-listing-title-sort="뉴스 레터 Vol.3: Issue 49" data-listing-filename-sort="2025_12_05_letter.qmd">
 <td>
 <span class="listing-date">2025-12-05</span>
 </td>
@@ -274,7 +356,13 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="listing-no-matching d-none">일치 없음</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
