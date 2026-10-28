@@ -1,25 +1,25 @@
 ---
 title: "News Letters"
 toc: false
-listing: 
+#listing: 
 
-  - id: news
-    type: table
-    contents:
-      - NEWS/**/*_news.qmd
-      - NEWS/**/*_wk*.qmd
-    sort: "date desc"
-    fields: 
-      - date
-      - title
+#  - id: news
+#    type: table
+#    contents:
+#      - NEWS/**/*_news.qmd
+#      - NEWS/**/*_wk*.qmd
+#    sort: "date desc"
+#    fields: 
+#      - date
+#      - title
 
-  - id: letter
-    type: table
-    contents: NEWS/**/*_letter.qmd
-    sort: "date desc"
-    fields: 
-      - date
-      - title
+#  - id: letter
+#    type: table
+#    contents: NEWS/**/*_letter.qmd
+#    sort: "date desc"
+#    fields: 
+#      - date
+#      - title
 
 ---
 
