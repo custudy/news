@@ -11,7 +11,7 @@ execute:
 website:
   draft-mode: visible
   navbar:
-    logo: title_b.png
+    logo: logo_b.png
     logo-href: https://www.custudy.org
     search: false
 #    right:
@@ -41,6 +41,8 @@ format:
   html:
     theme: spacelab
     date-format: iso
+
+title-block-banner: true
 
 lang: ko
 language: korean.yml
