@@ -1,0 +1,20 @@
+---
+title: "Blog"
+
+listing: 
+    type: table
+    contents: BLOG
+    fields: 
+      - "title"
+      - "description"
+      - "date"
+    sort: 
+      - "date desc"
+    categories: cloud
+
+sidebar: blog
+---
+
+![](work_in_progress.GIF){height="1in" fig-align="left"}
+
+## 건설도시연구 블로그
