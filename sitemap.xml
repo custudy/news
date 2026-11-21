@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://news.custudy.org/weeklynews.html</loc>
-    <lastmod>2026-10-26T12:10:34.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026년10월26일_wk47.html</loc>
-    <lastmod>2026-10-26T12:05:34.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026년10월26일_news.html</loc>
-    <lastmod>2026-10-27T04:00:30.621Z</lastmod>
-  </url>
-  <url>
-    <loc>https://news.custudy.org/index.html</loc>
-    <lastmod>2026-11-11T06:14:50.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026년10월27일_news.html</loc>
-    <lastmod>2026-10-27T08:18:40.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://news.custudy.org/NEWS/2026년/2026년10월23일_news.html</loc>
-    <lastmod>2026-10-23T15:51:12.472Z</lastmod>
+    <loc>https://news.custudy.org/blog.html</loc>
+    <lastmod>2026-11-21T07:18:14.905Z</lastmod>
   </url>
   <url>
     <loc>https://news.custudy.org/NEWS/2025년/2025년12월05일_letter.html</loc>
-    <lastmod>2026-10-26T12:17:22.357Z</lastmod>
+    <lastmod>2026-11-21T07:13:24.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/BLOG/2026년/2026년10월23일_news.html</loc>
+    <lastmod>2026-10-23T15:51:12.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/BLOG/2026년/2026년10월27일_news.html</loc>
+    <lastmod>2026-10-27T08:18:40.793Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/news.html</loc>
+    <lastmod>2026-11-21T07:23:00.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/index.html</loc>
+    <lastmod>2026-11-21T07:45:58.254Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/BLOG/2026년/2026년10월26일_news.html</loc>
+    <lastmod>2026-11-21T07:13:41.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/BLOG/2026년/2026년10월26일_wk47.html</loc>
+    <lastmod>2026-11-21T07:13:36.144Z</lastmod>
+  </url>
+  <url>
+    <loc>https://news.custudy.org/weeklynews.html</loc>
+    <lastmod>2026-10-26T12:10:34.926Z</lastmod>
   </url>
 </urlset>
